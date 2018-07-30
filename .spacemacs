@@ -44,8 +44,7 @@ values."
      emacs-lisp
      git
      markdown
-     java
-     ;; org
+     org
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -312,8 +311,6 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (setq eclim-eclipse-dirs '("~/eclipse/java-photon/eclipse")
-        eclim-executable "~/.p2/pool/plugins/org.eclim_2.8.0/bin/eclim")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
