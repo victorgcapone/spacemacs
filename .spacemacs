@@ -321,6 +321,10 @@ you should place your code here."
   (setq-default git-magit-status-fullscreen t)
   (setq eclim-eclipse-dirs '("~/eclipse/java-2018-12/eclipse")
         eclim-executable "~/.p2/pool/plugins/org.eclim_2.8.0/bin/eclim")
+  (require 'company)
+  (global-company-mode t)
+  (require 'company-emacs-eclim)
+  (company-emacs-eclim-setup)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
