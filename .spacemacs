@@ -319,7 +319,7 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq-default git-magit-status-fullscreen t)
-  (setq eclim-eclipse-dirs '("~/eclipse/java-photon/eclipse")
+  (setq eclim-eclipse-dirs '("~/eclipse/java-2018-12/eclipse")
         eclim-executable "~/.p2/pool/plugins/org.eclim_2.8.0/bin/eclim")
   )
 
