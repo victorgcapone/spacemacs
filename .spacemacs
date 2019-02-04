@@ -325,6 +325,12 @@ you should place your code here."
   (global-company-mode t)
   (require 'company-emacs-eclim)
   (company-emacs-eclim-setup)
+  ;; Faz o eclim usar caminhos relativos para funcionar com
+  ;; projetos multimódulos mavem
+  (defun eclim-fix-relative-path (path)
+    (replace-regexp-in-string "^.*src/" "src/" path))
+
+  (advice-add 'eclim--project-current-file :filter-return #'eclim-fix-relative-path)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
