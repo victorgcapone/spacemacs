@@ -30,13 +30,13 @@ selection.")
   "Timeout (seconds) when waiting for the second key of
 `auto-completion-complete-with-key-sequence'.")
 
-(defvar auto-completion-enable-snippets-in-popup nil
+(defvar auto-completion-enable-snippets-in-popup t
   "If non nil show snippets in the auto-completion popup.")
 
 (defvar auto-completion-enable-sort-by-usage nil
   "If non nil suggestions are sorted by how often they are used.")
 
-(defvar auto-completion-enable-help-tooltip nil
+(defvar auto-completion-enable-help-tooltip t 
   "If non nil the docstring appears in a tooltip.
 If set to `manual', help tooltip appears only when invoked
 manually.")
